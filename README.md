@@ -12,7 +12,9 @@ Pegas un prompt en Claude Code y te arma una página en tu computador. Le das un
 
 **Y con el Nivel 4, tu oficina en 3D:** Claude Code te pregunta cómo la quieres y la construye. Esta salió de pedir «tres torres de vidrio unidas arriba por una terraza como un barco, al atardecer, con piscina». Tus agentes trabajan en sus escritorios y cada borrador llega como una carta a la Mesa. Es solo para mirar: el sello sigue en tu Mesa.
 
-![Una oficina 3D hecha con el Nivel 4](imagenes/oficina-3d.jpg)
+| El edificio | Adentro: tus agentes y la Mesa |
+|---|---|
+| ![Una oficina 3D hecha con el Nivel 4](imagenes/oficina-3d.jpg) | ![El interior de la oficina 3D](imagenes/oficina-3d-adentro.jpg) |
 
 **Para quién:** quien vende agentes de IA a negocios, el dueño de un negocio que quiere un ayudante que no diga nada sin su permiso, y creadores (guiones, carruseles, correos: el agente propone y tú sellas). No necesitas saber programar.
 
@@ -22,7 +24,8 @@ Pegas un prompt en Claude Code y te arma una página en tu computador. Le das un
 | La **Mesa de Aprobación**: el corazón de la oficina de agentes de Charly.marketing, en una página sencilla que corre en tu computador. | La **oficina 3D del video**: es el laboratorio de Charly, mucho más grande (torres, barrio, carro, muchos puestos), y no viene aquí. |
 | Con el Nivel 4, **una oficina 3D sencilla que tú personalizas** (tu edificio, tus colores, tu letrero), pequeña y ligera. | Una oficina 3D que aprueba: la del Nivel 4 solo mira; «¡Va!», «Otra vuelta» y «Archivar» siguen en la Mesa. |
 | Un agente de ejemplo (respuestas de WhatsApp de una floristería) y, con los otros niveles, el equipo de un comercio, el de un **creador de contenido** (guiones de reels y carruseles, paquete `contenido-creador`) o **el puesto que tú inventes para cualquier negocio**. | Un bot que responde solo. Aquí el agente **nunca** envía, publica ni cobra: deja el borrador y tú lo copias después del «¡Va!». |
-| Para creadores: el guion del reel (ganchos, tomas, texto en pantalla, cierre con «Comenta PALABRA» y caption) y el texto del carrusel, listos para grabar y diseñar. | La **edición de video** de los reels de Charly: corre en su oficina, no en esta receta. Grabar, editar y diseñar lo haces tú. |
+| Para creadores: el guion del reel (ganchos, tomas, texto en pantalla, cierre con «Comenta PALABRA» y caption) y el texto del carrusel, listos para grabar y diseñar. | La **edición de video** de los reels de Charly: corre en su oficina, no en esta receta. Grabar y diseñar lo haces tú. |
+| Con el Nivel 5, **el primer corte de tus videos**: sin silencios, a buen ritmo, con volumen para redes, gancho en pantalla y subtítulos sencillos (opcionales), con tu sello en el plan y en el video. | **Edición avanzada:** efectos tipo After Effects, recortar a la persona del fondo, estilos por nicho o sonidos. Eso está en el [Kit Editor IA](https://marca-personal-charly.vercel.app/kit/) de Charly.marketing. |
 | Para tu uso, con la cuenta de Claude que ya tienes. Para un cliente, con **su** llave (mira [`VENDERLO.md`](VENDERLO.md)). | Conectado a WhatsApp, a Instagram o a tu agenda. Eso sería otro paso, también con sello. |
 | Probado en **Windows**, también con rutas con espacios ([`PRUEBAS.md`](PRUEBAS.md)). | Probado en Mac: debería funcionar, pero todavía no se ha corrido allí. |
 
@@ -89,10 +92,10 @@ flowchart LR
 | 2b. Tu propio puesto | Para cualquier negocio (peluquería, restaurante, gimnasio, taller…). Claude te entrevista en el chat y escribe un paquete nuevo en `paquetes/`; lo contratas en la Sala de Contratar, con tu «¡Va!». | [`PROMPT-CREA-TU-PUESTO.md`](PROMPT-CREA-TU-PUESTO.md) |
 | 3. Venderlo | Cómo ofrecérselo a un negocio local, y qué no prometer. | [`VENDERLO.md`](VENDERLO.md) |
 | 4. ¿Cómo quieres tu oficina? | Claude te pregunta qué edificio quieres (una torre de vidrio, una casa con jardín, uno inspirado en un lugar famoso), el ambiente, tus colores y tu letrero, y te arma una oficina 3D donde ves a tu equipo trabajar. Solo mira: aprobar sigue en la Mesa. | [`PROMPT-OFICINA-3D.md`](PROMPT-OFICINA-3D.md) |
+| 5. Tu editor de video | Dejas tu video en `videos/entrada/` y el «Editor de video» propone el primer corte: quita silencios, da ritmo, pone el gancho y, si quieres, subtítulos. Sellas el plan, tu computador arma el video con ffmpeg (gratis) y sellas el video. Necesita ffmpeg; los subtítulos, una llave de OpenAI tuya. | [`PROMPT-EDITOR-VIDEO.md`](PROMPT-EDITOR-VIDEO.md) |
 
 ## Próximos niveles
 Todavía no están en la receta. Cada uno seguiría la misma regla: nada sale sin tu sello.
-- **Edición de video:** cortar los silencios y poner subtítulos a tus reels.
 - **Aprobar desde el celular:** sellar los borradores sin estar frente al computador.
 - **Enviar por WhatsApp después del sello:** que el «¡Va!» mande la respuesta, en lugar de copiarla y pegarla tú.
 
