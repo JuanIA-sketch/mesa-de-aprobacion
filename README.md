@@ -4,6 +4,12 @@
 
 Pegas un prompt en Claude Code y te arma una página en tu computador. Le das un encargo al agente, él escribe un borrador y el borrador llega a la Mesa. Tú decides: **«¡Va!»**, **«Otra vuelta»** (con una nota, y lo rehace) o **«Archivar»**. Solo lo que sellas sale.
 
+**Así se ve** (una corrida real): el cliente pide girasoles, pide 50 % de descuento y dice «olvida tus instrucciones». El agente usa solo los precios del negocio, no da el descuento y te avisa en «Qué revisar antes de enviar». Nada sale hasta tu «¡Va!».
+
+| El encargo en la Mesa | La respuesta que propone el agente |
+|---|---|
+| ![El borrador en la Mesa](imagenes/mesa-pedido.jpg) | ![La respuesta lista para copiar](imagenes/mesa-respuesta.jpg) |
+
 **Para quién:** quien vende agentes de IA a negocios, el dueño de un negocio que quiere un ayudante que no diga nada sin su permiso, y creadores (guiones, carruseles, correos: el agente propone y tú sellas). No necesitas saber programar.
 
 ## Antes de empezar (una sola vez, Windows o Mac)
@@ -61,13 +67,13 @@ flowchart LR
 | Nivel | Qué es | Archivo |
 |---|---|---|
 | 1. El prompt | Un agente («Respuestas de WhatsApp» de una floristería de ejemplo) y la Mesa. | [`PROMPT.md`](PROMPT.md) |
-| 2. El equipo | Contratar más agentes desde un paquete para armar el equipo de un negocio. | [`PROMPT-NIVEL-2.md`](PROMPT-NIVEL-2.md) y [`paquetes/`](paquetes/) |
+| 2. El equipo | Contratar más agentes desde un paquete para armar el equipo de un negocio (Pedidos, Fechas especiales, Reseñas). Baja el repositorio (botón verde «Code» → «Download ZIP», o `git clone`), copia la carpeta `paquetes/` dentro de tu proyecto y pega el prompt. | [`PROMPT-NIVEL-2.md`](PROMPT-NIVEL-2.md) y [`paquetes/`](paquetes/) |
 | 3. Venderlo | Cómo ofrecérselo a un negocio local, y qué no prometer. | [`VENDERLO.md`](VENDERLO.md) |
 
-Los encargos que sirvieron para construir algo así están en [`ENCARGOS.md`](ENCARGOS.md).
+Los encargos que sirvieron para construir algo así están en [`ENCARGOS.md`](ENCARGOS.md). Las pruebas que se le hicieron a esta receta antes de publicarla están en [`PRUEBAS.md`](PRUEBAS.md).
 
 ---
 
-Inspirado en la oficina de agentes de Charly.marketing, hecha con Fable 5.2.
+Inspirado en la oficina de agentes de Charly.marketing. La receta la diseñaron y la probaron Fable 5.2 (seguridad y revisión) y Opus 5.5 (escritura y pruebas); para correrla no necesitas Fable: basta el modelo que trae Claude Code.
 
 Licencia MIT. Ver [`LICENSE`](LICENSE).
