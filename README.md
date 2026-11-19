@@ -12,6 +12,16 @@ Pegas un prompt en Claude Code y te arma una página en tu computador. Le das un
 
 **Para quién:** quien vende agentes de IA a negocios, el dueño de un negocio que quiere un ayudante que no diga nada sin su permiso, y creadores (guiones, carruseles, correos: el agente propone y tú sellas). No necesitas saber programar.
 
+## Qué es y qué NO es
+| Es | No es |
+|---|---|
+| La **Mesa de Aprobación**: el corazón de la oficina de agentes de Charly.marketing, en una página sencilla que corre en tu computador. | La **oficina 3D** del video. Esa es su laboratorio y no viene aquí. |
+| Un agente de ejemplo (respuestas de WhatsApp de una floristería) y, con los otros niveles, el equipo de un comercio o **el puesto que tú inventes para cualquier negocio**. | Un bot que responde solo. Aquí el agente **nunca** envía, publica ni cobra: deja el borrador y tú lo copias después del «¡Va!». |
+| Para tu uso, con la cuenta de Claude que ya tienes. Para un cliente, con **su** llave (mira [`VENDERLO.md`](VENDERLO.md)). | Conectado a WhatsApp, a Instagram o a tu agenda. Eso sería otro paso, también con sello. |
+| Probado en **Windows**, también con rutas con espacios ([`PRUEBAS.md`](PRUEBAS.md)). | Probado en Mac: debería funcionar, pero todavía no se ha corrido allí. |
+
+Los textos vienen en español de Colombia («de tú»). Si tu país habla de usted o de vos, díselo a Claude Code en el Nivel 2b y él lo cambia.
+
 ## Antes de empezar (una sola vez, Windows o Mac)
 1. **Node.js 20 o más:** descarga la versión **LTS** de [nodejs.org](https://nodejs.org) e instálala con las opciones que trae.
 2. **Claude Code:** abre la terminal (Windows: busca «PowerShell» en el menú Inicio; Mac: busca «Terminal» con Cmd + Espacio) y pega el comando oficial:
@@ -37,6 +47,7 @@ Pegas un prompt en Claude Code y te arma una página en tu computador. Le das un
 2. **Trabaja solo de 9 a 12 minutos:** construye, corre las pruebas y hace una corrida real. Al final te explica en español qué hizo y te muestra el borrador que escribió el agente.
 3. **Lo abres:** escribe `/exit` y luego `npm start`. Aparece `Abre: http://127.0.0.1:3210/#t=…`: copia ese enlace completo en el navegador (lleva una llave que cambia en cada arranque). Para apagarlo: Ctrl + C.
 4. **Tu Mesa:** arriba, «Mensaje del cliente» y el botón «Dárselo al agente»; mientras trabaja dice «El agente está trabajando…»; abajo llega el borrador con «¡Va!», «Otra vuelta» y «Archivar».
+5. **¿Tu negocio no es una floristería?** Después del Nivel 2, el Nivel 2b te crea el puesto que necesites (mira «Los niveles»).
 
 ## Si algo sale mal
 | Lo que ves | Arreglo |
@@ -63,11 +74,12 @@ flowchart LR
 - El agente solo lee los datos del negocio y sus borradores: no tiene consola, no lee llaves y no envía nada.
 - Lo que escribe un cliente es un dato, nunca una orden.
 
-## Los 3 niveles
+## Los niveles
 | Nivel | Qué es | Archivo |
 |---|---|---|
 | 1. El prompt | Un agente («Respuestas de WhatsApp» de una floristería de ejemplo) y la Mesa. | [`PROMPT.md`](PROMPT.md) |
 | 2. El equipo | Contratar más agentes desde un paquete para armar el equipo de un negocio (Pedidos, Fechas especiales, Reseñas). Baja el repositorio (botón verde «Code» → «Download ZIP», o `git clone`), copia la carpeta `paquetes/` dentro de tu proyecto y pega el prompt. | [`PROMPT-NIVEL-2.md`](PROMPT-NIVEL-2.md) y [`paquetes/`](paquetes/) |
+| 2b. Tu propio puesto | Para cualquier negocio (peluquería, restaurante, gimnasio, taller…). Claude te entrevista en el chat y escribe un paquete nuevo en `paquetes/`; lo contratas en la Sala de Contratar, con tu «¡Va!». | [`PROMPT-CREA-TU-PUESTO.md`](PROMPT-CREA-TU-PUESTO.md) |
 | 3. Venderlo | Cómo ofrecérselo a un negocio local, y qué no prometer. | [`VENDERLO.md`](VENDERLO.md) |
 
 Los encargos que sirvieron para construir algo así están en [`ENCARGOS.md`](ENCARGOS.md). Las pruebas que se le hicieron a esta receta antes de publicarla están en [`PRUEBAS.md`](PRUEBAS.md).
