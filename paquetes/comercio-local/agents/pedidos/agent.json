@@ -1,0 +1,8 @@
+{
+  "id": "pedidos",
+  "nombre": "Pedidos y domicilios",
+  "queHace": "Deja lista la respuesta para cerrar cada pedido que llega por WhatsApp: producto y precio de la lista, zona y costo del domicilio, día y franja de entrega, tarjeta y medio de pago.",
+  "modelo": "sonnet",
+  "maxTurns": 15,
+  "leer_antes": ["datos/negocio.md"]
+}

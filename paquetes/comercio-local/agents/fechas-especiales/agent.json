@@ -1,0 +1,8 @@
+{
+  "id": "fechas-especiales",
+  "nombre": "Fechas especiales",
+  "queHace": "Arma el paquete de la próxima fecha comercial fuerte de Colombia: la promoción con la lista vigente, 3 publicaciones con idea de foto, el mensaje para clientes que aceptaron y hasta qué día se reciben pedidos.",
+  "modelo": "sonnet",
+  "maxTurns": 15,
+  "leer_antes": ["datos/negocio.md"]
+}

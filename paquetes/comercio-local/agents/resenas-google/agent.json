@@ -1,0 +1,8 @@
+{
+  "id": "resenas-google",
+  "nombre": "Reseñas y Google",
+  "queHace": "Deja lista la respuesta a cada reseña del perfil del negocio en Google y escribe de 2 a 4 publicaciones al mes para su ficha, sin datos de nadie y sin premios por reseñas.",
+  "modelo": "sonnet",
+  "maxTurns": 15,
+  "leer_antes": ["datos/negocio.md"]
+}
