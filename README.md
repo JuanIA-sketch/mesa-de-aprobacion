@@ -10,12 +10,17 @@ Pegas un prompt en Claude Code y te arma una página en tu computador. Le das un
 |---|---|
 | ![El borrador en la Mesa](imagenes/mesa-pedido.jpg) | ![La respuesta lista para copiar](imagenes/mesa-respuesta.jpg) |
 
+**Y con el Nivel 4, tu oficina en 3D:** Claude Code te pregunta cómo la quieres y la construye. Esta salió de pedir «tres torres de vidrio unidas arriba por una terraza como un barco, al atardecer, con piscina». Tus agentes trabajan en sus escritorios y cada borrador llega como una carta a la Mesa. Es solo para mirar: el sello sigue en tu Mesa.
+
+![Una oficina 3D hecha con el Nivel 4](imagenes/oficina-3d.jpg)
+
 **Para quién:** quien vende agentes de IA a negocios, el dueño de un negocio que quiere un ayudante que no diga nada sin su permiso, y creadores (guiones, carruseles, correos: el agente propone y tú sellas). No necesitas saber programar.
 
 ## Qué es y qué NO es
 | Es | No es |
 |---|---|
-| La **Mesa de Aprobación**: el corazón de la oficina de agentes de Charly.marketing, en una página sencilla que corre en tu computador. | La **oficina 3D** del video. Esa es su laboratorio y no viene aquí. |
+| La **Mesa de Aprobación**: el corazón de la oficina de agentes de Charly.marketing, en una página sencilla que corre en tu computador. | La **oficina 3D del video**: es el laboratorio de Charly, mucho más grande (torres, barrio, carro, muchos puestos), y no viene aquí. |
+| Con el Nivel 4, **una oficina 3D sencilla que tú personalizas** (tu edificio, tus colores, tu letrero), pequeña y ligera. | Una oficina 3D que aprueba: la del Nivel 4 solo mira; «¡Va!», «Otra vuelta» y «Archivar» siguen en la Mesa. |
 | Un agente de ejemplo (respuestas de WhatsApp de una floristería) y, con los otros niveles, el equipo de un comercio, el de un **creador de contenido** (guiones de reels y carruseles, paquete `contenido-creador`) o **el puesto que tú inventes para cualquier negocio**. | Un bot que responde solo. Aquí el agente **nunca** envía, publica ni cobra: deja el borrador y tú lo copias después del «¡Va!». |
 | Para creadores: el guion del reel (ganchos, tomas, texto en pantalla, cierre con «Comenta PALABRA» y caption) y el texto del carrusel, listos para grabar y diseñar. | La **edición de video** de los reels de Charly: corre en su oficina, no en esta receta. Grabar, editar y diseñar lo haces tú. |
 | Para tu uso, con la cuenta de Claude que ya tienes. Para un cliente, con **su** llave (mira [`VENDERLO.md`](VENDERLO.md)). | Conectado a WhatsApp, a Instagram o a tu agenda. Eso sería otro paso, también con sello. |
@@ -49,6 +54,7 @@ Los textos vienen en español de Colombia («de tú»). Si tu país habla de ust
 3. **Lo abres:** escribe `/exit` y luego `npm start`. Aparece `Abre: http://127.0.0.1:3210/#t=…`: copia ese enlace completo en el navegador (lleva una llave que cambia en cada arranque). Para apagarlo: Ctrl + C.
 4. **Tu Mesa:** arriba, «Mensaje del cliente» y el botón «Dárselo al agente»; mientras trabaja dice «El agente está trabajando…»; abajo llega el borrador con «¡Va!», «Otra vuelta» y «Archivar».
 5. **¿Tu negocio no es una floristería?** Después del Nivel 2, el Nivel 2b te crea el puesto que necesites (mira «Los niveles»).
+6. **Tu oficina en 3D (Nivel 4):** en la Mesa, el enlace «Ver mi oficina en 3D» te muestra a tu equipo en el edificio que elegiste, quién trabaja y cada borrador como una carta sobre la Mesa; tocas una carta y vuelves a la Mesa para sellarla.
 
 ## Si algo sale mal
 | Lo que ves | Arreglo |
@@ -82,6 +88,13 @@ flowchart LR
 | 2. El equipo | Contratar más agentes desde un paquete. Hay dos paquetes: `comercio-local` (Pedidos, Fechas especiales, Reseñas) y `contenido-creador` (Guiones de reels, Carruseles). Baja el repositorio (botón verde «Code» → «Download ZIP», o `git clone`), copia la carpeta `paquetes/` dentro de tu proyecto y pega el prompt. | [`PROMPT-NIVEL-2.md`](PROMPT-NIVEL-2.md) y [`paquetes/`](paquetes/) |
 | 2b. Tu propio puesto | Para cualquier negocio (peluquería, restaurante, gimnasio, taller…). Claude te entrevista en el chat y escribe un paquete nuevo en `paquetes/`; lo contratas en la Sala de Contratar, con tu «¡Va!». | [`PROMPT-CREA-TU-PUESTO.md`](PROMPT-CREA-TU-PUESTO.md) |
 | 3. Venderlo | Cómo ofrecérselo a un negocio local, y qué no prometer. | [`VENDERLO.md`](VENDERLO.md) |
+| 4. ¿Cómo quieres tu oficina? | Claude te pregunta qué edificio quieres (una torre de vidrio, una casa con jardín, uno inspirado en un lugar famoso), el ambiente, tus colores y tu letrero, y te arma una oficina 3D donde ves a tu equipo trabajar. Solo mira: aprobar sigue en la Mesa. | [`PROMPT-OFICINA-3D.md`](PROMPT-OFICINA-3D.md) |
+
+## Próximos niveles
+Todavía no están en la receta. Cada uno seguiría la misma regla: nada sale sin tu sello.
+- **Edición de video:** cortar los silencios y poner subtítulos a tus reels.
+- **Aprobar desde el celular:** sellar los borradores sin estar frente al computador.
+- **Enviar por WhatsApp después del sello:** que el «¡Va!» mande la respuesta, en lugar de copiarla y pegarla tú.
 
 Los encargos que sirvieron para construir algo así están en [`ENCARGOS.md`](ENCARGOS.md). Las pruebas que se le hicieron a esta receta antes de publicarla están en [`PRUEBAS.md`](PRUEBAS.md).
 
