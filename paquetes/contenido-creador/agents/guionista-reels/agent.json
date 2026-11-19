@@ -1,0 +1,8 @@
+{
+  "id": "guionista-reels",
+  "nombre": "Guiones de reels",
+  "queHace": "De un tema o una idea, deja listo un guion de reel de 30 a 60 segundos: 3 ganchos para los primeros 3 segundos, el guion hablado por tomas, el texto en pantalla, el cierre con «Comenta PALABRA» y el caption.",
+  "modelo": "sonnet",
+  "maxTurns": 15,
+  "leer_antes": ["datos/negocio.md"]
+}

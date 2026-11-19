@@ -28,7 +28,7 @@ tests/  scripts/probar.mjs  LEEME.md
 
 ### 1. El agente es DATOS
 - `agent.json`: `{ "id": "respuestas-whatsapp", "nombre": "Respuestas de WhatsApp", "modelo": "sonnet", "maxTurns": 12, "leer_antes": ["datos/negocio.md"] }`. Al cargarla, **falla cerrado**: si `modelo` no es `sonnet`, `opus` o `haiku`, si `maxTurns` no es un entero de 1 a 30 o si `leer_antes` trae una ruta fuera de `datos/`, no se corre nada y la página dice por qué.
-- Negocio inventado: **Floristería Ejemplo** (Bogotá, trato de tú). `negocio.md` lleva EXACTAMENTE estos datos, sin teléfonos ni nada real:
+- Negocio inventado: **Floristería Ejemplo** (Bogotá, trato de tú). `negocio.md` lleva EXACTAMENTE estos datos, sin teléfonos ni nada real, en secciones con estos títulos exactos: `## Productos y precios`, `## Horario del local`, `## Domicilios` y `## Medios de pago` (los mismos de los paquetes del Nivel 2):
   - Productos (vigentes del 1 de noviembre al 31 de diciembre de 2026): ramo de 12 rosas rojas $85.000, arreglo de girasoles $65.000, caja de rosas con chocolates $120.000, orquídea en matera $95.000, ramo de temporada $55.000, arreglo de condolencias $110.000. Extras: chocolates $18.000, globo $12.000. Tarjeta incluida (hasta 30 palabras). Promociones vigentes: ninguna.
   - Horario: lunes a sábado de 8 a. m. a 7 p. m.; domingos de 9 a. m. a 2 p. m.; festivos, cerrado.
   - Domicilio: Chapinero, Teusaquillo y Usaquén $12.000; Suba, Engativá y Kennedy $15.000; resto de Bogotá $18.000; fuera de Bogotá no llegamos; gratis desde $150.000; franjas de mañana (9 a. m. a 12 m.) y de tarde (2 p. m. a 6 p. m.); pedidos para el mismo día hasta las 3 p. m.

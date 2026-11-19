@@ -1,0 +1,8 @@
+{
+  "id": "carruseles",
+  "nombre": "Carruseles",
+  "queHace": "De un tema, deja listo un carrusel de 6 a 8 láminas: la lámina 1 con el gancho, las de valor y la última con el llamado a la acción, con el texto de cada lámina, la idea de imagen y el caption.",
+  "modelo": "sonnet",
+  "maxTurns": 15,
+  "leer_antes": ["datos/negocio.md"]
+}

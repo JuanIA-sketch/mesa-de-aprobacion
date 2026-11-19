@@ -16,7 +16,8 @@ Pegas un prompt en Claude Code y te arma una página en tu computador. Le das un
 | Es | No es |
 |---|---|
 | La **Mesa de Aprobación**: el corazón de la oficina de agentes de Charly.marketing, en una página sencilla que corre en tu computador. | La **oficina 3D** del video. Esa es su laboratorio y no viene aquí. |
-| Un agente de ejemplo (respuestas de WhatsApp de una floristería) y, con los otros niveles, el equipo de un comercio o **el puesto que tú inventes para cualquier negocio**. | Un bot que responde solo. Aquí el agente **nunca** envía, publica ni cobra: deja el borrador y tú lo copias después del «¡Va!». |
+| Un agente de ejemplo (respuestas de WhatsApp de una floristería) y, con los otros niveles, el equipo de un comercio, el de un **creador de contenido** (guiones de reels y carruseles, paquete `contenido-creador`) o **el puesto que tú inventes para cualquier negocio**. | Un bot que responde solo. Aquí el agente **nunca** envía, publica ni cobra: deja el borrador y tú lo copias después del «¡Va!». |
+| Para creadores: el guion del reel (ganchos, tomas, texto en pantalla, cierre con «Comenta PALABRA» y caption) y el texto del carrusel, listos para grabar y diseñar. | La **edición de video** de los reels de Charly: corre en su oficina, no en esta receta. Grabar, editar y diseñar lo haces tú. |
 | Para tu uso, con la cuenta de Claude que ya tienes. Para un cliente, con **su** llave (mira [`VENDERLO.md`](VENDERLO.md)). | Conectado a WhatsApp, a Instagram o a tu agenda. Eso sería otro paso, también con sello. |
 | Probado en **Windows**, también con rutas con espacios ([`PRUEBAS.md`](PRUEBAS.md)). | Probado en Mac: debería funcionar, pero todavía no se ha corrido allí. |
 
@@ -78,7 +79,7 @@ flowchart LR
 | Nivel | Qué es | Archivo |
 |---|---|---|
 | 1. El prompt | Un agente («Respuestas de WhatsApp» de una floristería de ejemplo) y la Mesa. | [`PROMPT.md`](PROMPT.md) |
-| 2. El equipo | Contratar más agentes desde un paquete para armar el equipo de un negocio (Pedidos, Fechas especiales, Reseñas). Baja el repositorio (botón verde «Code» → «Download ZIP», o `git clone`), copia la carpeta `paquetes/` dentro de tu proyecto y pega el prompt. | [`PROMPT-NIVEL-2.md`](PROMPT-NIVEL-2.md) y [`paquetes/`](paquetes/) |
+| 2. El equipo | Contratar más agentes desde un paquete. Hay dos paquetes: `comercio-local` (Pedidos, Fechas especiales, Reseñas) y `contenido-creador` (Guiones de reels, Carruseles). Baja el repositorio (botón verde «Code» → «Download ZIP», o `git clone`), copia la carpeta `paquetes/` dentro de tu proyecto y pega el prompt. | [`PROMPT-NIVEL-2.md`](PROMPT-NIVEL-2.md) y [`paquetes/`](paquetes/) |
 | 2b. Tu propio puesto | Para cualquier negocio (peluquería, restaurante, gimnasio, taller…). Claude te entrevista en el chat y escribe un paquete nuevo en `paquetes/`; lo contratas en la Sala de Contratar, con tu «¡Va!». | [`PROMPT-CREA-TU-PUESTO.md`](PROMPT-CREA-TU-PUESTO.md) |
 | 3. Venderlo | Cómo ofrecérselo a un negocio local, y qué no prometer. | [`VENDERLO.md`](VENDERLO.md) |
 
